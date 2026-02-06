@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Heena Shekh Profile Card</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #d7e1ec, #c3d0e5); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: linear-gradient(145deg, #ffdee9, #b5fffc); 
+            border-radius: 25px;
+            width: 320px;
+            text-align: center;
+            padding: 30px 20px;
+            color: #2c3e50;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid #fff;
+          
+        }
+
+        h2 {
+            margin: 0 0 15px 0;
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .verified {
+            width: 20px;
+            height: 20px;
+        }
+
+        .role {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #34495e;
+            font-weight: 500;
+        }
+
+        .info {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .info p {
+            margin: 12px 0;
+            font-size: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .qr-code {
+            margin-top: 20px;
+        }
+
+        .qr-code img {
+            width: 120px;
+            height: 120px;
+            border-radius: 12px;
+            border: 2px solid #fff;
+        }
+
+        .follow-btn {
+            margin-top: 20px;
+            background: #6a11cb; 
+            background: linear-gradient(45deg, #6a11cb, #2575fc);
+            color: #fff;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 15px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .follow-btn:hover {
+            transform: scale(1.05);
+           
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        
+        <img class="profile-img" src="https://i.pinimg.com/736x/d1/fc/73/d1fc7399239a1beb61c9d77e71de1a86.jpg" alt="Heena Shekh">
+        
+        <h2>Heena Shekh <img class="verified" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Tik_icon.svg/1024px-Tik_icon.svg.png" alt="Verified"></h2>
+        <div class="role">BSCIT Student</div>
+
+        <div class="details">
+            <p><span>Address:</span> Bhaktapur</p>
+            <p><span>Email:</span> shekhh372@gmail.com</p>
+            <p><span>Contact:</span> 97010878756</p>
+        </div>
+
+        <div class="qr-code">
+            
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Heena%20Shekh%20-%20Bhaktapur%20-%20shekhh372@gmail.com%20-%2097010878756" alt="QR Code">
+        </div>
+
+        <button class="follow-btn">Follow +</button>
+    </div>
+</body>
+</html>
