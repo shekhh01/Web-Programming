@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elegant Interior Designs</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <div class="logo">Elegant Interior Designs</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+  </div>
+</header>
+
+<section class="intro" id="home">
+  <div class="container grid-2 fade-in">
+    <div>
+      <h1>Designing Comfort with Elegance</h1>
+      <p>We design interiors that blend beauty, comfort, and functionality.</p>
+      <a href="#gallery" class="btn primary">Explore Gallery</a>
+    </div>
+
+    <img src="https://i.pinimg.com/1200x/2b/76/cc/2b76cc89c6c9553288e83f48495a5357.jpg" class="main-img">
+  </div>
+</section>
+
+<section class="gallery-section" id="gallery">
+  <div class="container">
+    <h2>Our Gallery</h2>
+
+    <div class="gallery-grid">
+      <a href="living-room.html" class="gallery-card">
+        <img src="https://i.pinimg.com/1200x/a0/02/b9/a002b9349faec6d10e48e708e095d723.jpg">
+        <span>Living Room</span>
+      </a>
+
+      <a href="bedroom.html" class="gallery-card">
+        <img src="https://i.pinimg.com/736x/88/5d/5d/885d5dc1817d96738d860b9b6849d8cf.jpg">
+        <span>Bedroom</span>
+      </a>
+
+      <a href="office.html" class="gallery-card">
+        <img src="https://i.pinimg.com/736x/92/7c/77/927c779f4697ec50b9e847233958603d.jpg">
+        <span>Office Space</span>
+      </a>
+
+      <a href="kitchen.html" class="gallery-card">
+        <img src="https://i.pinimg.com/1200x/3f/be/82/3fbe82b30daede2a754c9a5b1a2b6687.jpg">
+        <span>Kitchen</span>
+      </a>
+
+      <a href="dining.html" class="gallery-card">
+        <img src="https://i.pinimg.com/736x/05/e7/2b/05e72bdae23c4be7ca2544f97220f659.jpg">
+        <span>Dining Area</span>
+      </a>
+
+      <a href="lounge.html" class="gallery-card">
+        <img src="https://i.pinimg.com/1200x/4a/0e/33/4a0e333078f6a8a0e01b355128845db4.jpg">
+        <span>Lounge</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-content container">
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#gallery">Explore Gallery</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Customer Services</h3>
+      <ul>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Elegant Interior Designs
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav-links');
+  toggle.onclick = () => nav.classList.toggle('active');
+</script>
+
+</body>
+</html>
