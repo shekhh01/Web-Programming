@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dining Area - Elegant Interior Designs</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Dining 2x2 grid */
+    .dining-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .dining-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .dining-grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    @media(max-width:768px){
+      .dining-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(90deg,#163029,#1F3D36);">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Elegant Interior Designs</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#gallery">Gallery</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="booking.html">Booking</a></li>
+            <li><a class="dropdown-item" href="consultation.html">Consultation</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Dining Section -->
+<section class="gallery-page py-5" style="background: linear-gradient(90deg,#F5F2EC,#E8E1D8);">
+  <div class="container">
+    <h1 class="mb-3" style="color:#163029;">Dining Area Designs</h1>
+    <p style="color:#2E2E2E; font-size:1.1rem;">
+      Our dining spaces are elegant and inviting, designed for memorable meals with family and friends. 
+      We focus on stylish furniture, harmonious colors, and comfortable layouts.
+    </p>
+    
+    <!-- 2x2 Image Grid -->
+    <div class="dining-grid">
+      <img src="https://i.pinimg.com/1200x/4b/da/9a/4bda9acf85a3fa1f57d376c65a45dbf6.jpg" alt="Dining Image 1">
+      <img src="https://i.pinimg.com/736x/ec/96/06/ec96063de043e2188c004d0bca66a3cc.jpg" alt="Dining Image 2">
+      <img src="https://i.pinimg.com/1200x/42/3e/a1/423ea1e601b581d05a3a211e70b0a8be.jpg" alt="Dining Image 3">
+      <img src="https://i.pinimg.com/736x/05/e7/2b/05e72bdae23c4be7ca2544f97220f659.jpg" alt="Dining Image 4">
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="index.html#gallery" class="btn btn-secondary">Back to Gallery</a>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Office Space - Elegant Interior Designs</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+    .office-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .office-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .office-grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    @media(max-width:768px){
+      .office-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(90deg,#163029,#1F3D36);">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Elegant Interior Designs</a>
+  </div>
+</nav>
+
+
+<section class="gallery-page py-5" style="background: linear-gradient(90deg,#F5F2EC,#E8E1D8);">
+  <div class="container">
+    <h1 class="mb-3" style="color:#163029;">Office Space Designs</h1>
+    <p style="color:#2E2E2E; font-size:1.1rem;">
+      Our office designs prioritize productivity and comfort, integrating modern furniture, organized layouts, and stylish accents to create professional and welcoming environments.
+    </p>
+    
+   
+    <div class="office-grid">
+      <img src="https://i.pinimg.com/1200x/38/d1/4e/38d14efe4a2d78fa1f09b5d334f14cfa.jpg" alt="Office Image 1">
+      <img src="https://i.pinimg.com/1200x/b9/72/00/b97200e0af9693ee013567ba1fd309f3.jpg" alt="Office Image 2">
+      <img src="https://i.pinimg.com/736x/f8/7a/d8/f87ad8e6419c21f2d9ff7f6384b329be.jpg" alt="Office Image 3">
+      <img src="https://i.pinimg.com/736x/92/7c/77/927c779f4697ec50b9e847233958603d.jpg" alt="Office Image 4">
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="index.html#gallery" class="btn btn-secondary">Back to Gallery</a>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
